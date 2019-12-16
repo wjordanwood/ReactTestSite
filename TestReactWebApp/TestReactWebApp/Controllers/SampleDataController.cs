@@ -29,7 +29,7 @@ namespace TestReactWebApp.Controllers
         }
 
         [HttpPost("[action]")]
-        public JsonResult Login(LoginForm form)
+        public JsonResult Login([FromBody] LoginForm form)
         {
             User user = null;
             try
