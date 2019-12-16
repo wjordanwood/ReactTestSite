@@ -16,7 +16,7 @@ export class LoginForm extends Component {
     }
 
     handleSubmit(event) {
-        fetch('api/SampleData/Login', {
+        fetch('api/User/Login', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
