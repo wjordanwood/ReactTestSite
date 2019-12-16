@@ -9,7 +9,7 @@ namespace TestReactWebApp.Services
 {
     public class UserService
     {
-        public IUserRepository UserRepository = new UserMockRepository();
+        public IUserRepository UserRepository = new UserTextRepository();
 
         public User AuthenticateCustomer(string username, string password)
         {

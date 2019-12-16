@@ -15,8 +15,8 @@ export class ListUsers extends Component {
                 </thead>
                 <tbody>
                     {users.map(user =>
-                        <tr key={user.id}>
-                            <td>{user.id}</td>
+                        <tr key={user.userID}>
+                            <td>{user.userID}</td>
                             <td>{user.firstName}</td>
                             <td>{user.lastName}</td>
                             <td>{user.username}</td>

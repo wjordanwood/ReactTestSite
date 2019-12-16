@@ -8,7 +8,6 @@ namespace TestReactWebApp.Models
 {
     public class User
     {
-        [JsonProperty("id")]
         public int UserID { get; set; }
         public string Username { get; set; }
 
