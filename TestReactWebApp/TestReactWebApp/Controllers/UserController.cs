@@ -9,7 +9,7 @@ using TestReactWebApp.Models;
 namespace TestReactWebApp.Controllers
 {
     [Route("api/[controller]")]
-    public class SampleDataController : BaseController
+    public class UserController : BaseController
     {
         [HttpPost("[action]")]
         public JsonResult Login([FromBody] LoginForm form)
@@ -36,6 +36,17 @@ namespace TestReactWebApp.Controllers
             {
                 success = false,
                 message = "We could not log you in. Sorry!"
+            });
+        }
+
+        [HttpGet("[action]")]
+        public JsonResult GetUsers()
+        {
+            var users = UserService.GetUsers();
+
+            return new JsonResult(new {
+                success = true,
+                users = users
             });
         }
     }

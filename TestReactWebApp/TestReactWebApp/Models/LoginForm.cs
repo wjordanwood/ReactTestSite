@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace TestReactWebApp.Models
 {
-    [DataContract]
     public class LoginForm
     {
-        [DataMember(Name = "username")]
+        [JsonProperty("username")]
         public string Username { get; set; }
 
-        [DataMember(Name = "password")]
+        [JsonProperty("password")]
         public string Password { get; set; }
     }
 }

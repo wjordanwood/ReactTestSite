@@ -15,5 +15,10 @@ namespace TestReactWebApp.Services
         {
             return UserRepository.AuthenticateUser(username, password);
         }
+
+        public List<User> GetUsers()
+        {
+            return UserRepository.GetUsers();
+        }
     }
 }

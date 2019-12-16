@@ -9,5 +9,6 @@ namespace TestReactWebApp.Repositories
     public interface IUserRepository
     {
         User AuthenticateUser(string username, string password);
+        List<User> GetUsers();
     }
 }

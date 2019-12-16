@@ -23,6 +23,11 @@ namespace TestReactWebApp.Repositories
             return null;
         }
 
+        public List<User> GetUsers()
+        {
+            return Users;
+        }
+
         public List<User> Users
         {
             get
