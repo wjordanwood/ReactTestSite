@@ -10,5 +10,6 @@ namespace TestReactWebApp.Controllers
     public class BaseController : Controller
     {
         public UserService UserService = new UserService();
+        public MarketService MarketService = new MarketService();
     }
 }
